@@ -1,0 +1,48 @@
+.title-header {
+    color: rgb(224, 19, 88);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(21, 243, 21);
+}
+
+.menu li{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    color: rgba(147, 40, 209, 0.952);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    background-color: rgb(192, 196, 207);
+}
+
+.title-description {
+    color: burlywood;
+    font-style: italic;
+}
+
+.ingredients li::before{
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.ingredients li {
+    color: green;
+}
+
+.preparation {list-style: none; counter-reset: li}
+
+.preparation li::before {content: counter(li); color: red;
+    display: inline-block; width: 1em;
+    margin-left: -1em
+}
+
+.preparation li {
+    counter-increment: li;
+    color: green;
+}
